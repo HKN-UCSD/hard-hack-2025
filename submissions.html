@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>H.A.R.D. Hack |  Submission </title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="Hard Hack is a UCSD hardware-focused hackathon."
+    />
+    <meta
+      name="keywords"
+      content="Hard Hack, UCSD, UCSD Hard Hack, Hard Hack San Diego, Hardware Hackathon, Hard Hack 2023, Hard Hack website, Hard Hack instagram, Hard Hack media, Hard Hack at UCSD, Hard Hack at San Diego, Hackathon, Hackathon UCSD"
+    />
+    <meta name="author" content="Hard Hack" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="./assets/modules/dropdown/dropdown.css" />
+    <link rel="stylesheet" href="./assets/modules/heading/heading.css" />
+    
+<style>
+    div.wrapper {
+        max-width: 1000px;
+        width: 100%;
+        padding: 0px 100px;
+        box-sizing: border-box;
+    }
+
+    div.card {
+        display: grid;
+        aspect-ratio: 2/1;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        gap: 30px;
+        padding: 15px;
+        margin: 15px;
+        font-family: "Poppins";
+    }
+    div.card * {
+        text-align: left;
+    }
+
+    div.img-section {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1/1;
+    }
+
+    div.img-section img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+
+    div.text-section {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        overflow-y: scroll;
+        text-wrap: wrap;
+    }
+
+    div.text-section::-webkit-scrollbar {
+        background-color: transparent;
+        width: 4px;
+    }
+
+    div.text-section::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 2px;
+    }
+
+    @media screen and (width <= 800px) {
+        div.wrapper {
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        div.card {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            aspect-ratio: 1/2;
+            @supports not (aspect-ratio: 1/2) {
+                max-height: 800px;
+            }
+        }
+
+        div.img-section {
+            grid-column-start: 1;
+            grid-row-start: 1;
+        }
+
+        div.text-section {
+            grid-column-start: 1;
+            grid-row-start: 2;
+        }
+    }
+</style>
+
+
+    <script src="./assets/libs/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+    <script src="./assets/modules/dropdown/dropdown.js"></script>
+    <script src="./assets/modules/heading/heading.js"></script>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <!-- START OF BODY -->
+  <body>
+    <div id="menu-bar" class="background-element">
+      <a href="/index"><span>Home</span></a>
+      <a href="/sponsors"><span>Sponsor Us</span></a>
+      <a href="/submissions"><span>Submissions</span></a>
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfA1I-pSimuTlpifzKSWF5s5FZ08zvofOefbBSUjUbdeaurdg/viewform"
+        target="_blank"
+      ><span>Submit Your Project</span>
+      </a>
+    </div>
+    <div id="dropdown-menu-bar" class="background-element">
+      <div
+        class="hamburger-icon"
+        style="position: absolute; z-index: 1; right: 0px; margin: 1em 1.5em"
+      >
+        <div class="hamburger-bar1"></div>
+        <div class="hamburger-bar2"></div>
+        <div class="hamburger-bar3"></div>
+      </div>
+      <div
+        id="dropdown-menu-bar-items"
+        style="
+          background-image: url(./assets/images/background.png);
+          position: relative;
+          width: 100%;
+          height: 0px;
+          overflow: hidden;
+        "
+      >
+        <div>
+          <div style="height: 68px"></div>
+          <a href="/index"><p>Home</p></a>
+          <a href="/sponsors"><p>Sponsor Us</p></a>
+          <a href="/submissions"><p>Submissions</p></a>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfA1I-pSimuTlpifzKSWF5s5FZ08zvofOefbBSUjUbdeaurdg/viewform"
+            target="_blank"
+          ><p>Submit Your Project</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="background">
+      <img
+        class="background-element"
+        src="./assets/images/hard_hack_small_logo.png"
+        style="width: 10%; min-width: 50px; top: max(3vh, 20px); left: 20px"
+      />
+    </div>
+
+    
+<h1 style="margin-bottom: 1em; font-size: calc(1em + 3vw); margin-top: 4em">
+    Submissions
+</h1>
+<template id="card-template">
+    <div class="card">
+        <div class="img-section"></div>
+        <div class="text-section"></div>
+    </div>
+</template>
+<div class="spacer"></div>
+<div id="card-wrapper" class="wrapper"></div>
+
+
+        <!-- ASK QUESTIONS -->
+        <div class="center" id="questions-div" style="padding-bottom: 4em">
+          <h1 style="margin-bottom: 1em">Any More Questions?</h1>
+          <form id="questionsForm">
+            <input
+              type="text"
+              id="email"
+              placeholder="Email"
+              style="
+                width: min(80%, 600px);
+                height: 36px;
+                margin-bottom: 16px;
+                border-radius: 8px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border: none;
+              "
+            />
+            <br />
+            <textarea
+              type="text"
+              id="question"
+              rows="10"
+              cols="50"
+              placeholder="Enter Your Question Here..."
+              style="width: min(80%, 600px); padding: 10px; border-radius: 8px"
+            ></textarea>
+          </form>
+          <br />
+    
+          <button onclick="submitForm()" class="projects-button center main-font">
+            Submit Form
+          </button>
+          <p id="error"></p>
+        </div>
+        <script>
+          function clearMessage() {
+            document.getElementById("error").innerHTML = "";
+          }
+    
+          function submitForm() {
+            console.log("pressed");
+            const email = document.getElementById("email").value;
+            const question = document.getElementById("question").value;
+            if (email == "") {
+              document.getElementById("error").innerHTML =
+                "Email Field Cannot Be Empty";
+            } else if (question == "") {
+              document.getElementById("error").innerHTML =
+                "Question Field Cannot Be Empty";
+            } else {
+              let url =
+                "https://docs.google.com/forms/d/e/1FAIpQLScq_QdWo8Y_mPnKSTRerhu11__t2NwnedWEzKvqf5_13xtTgQ/formResponse?usp=pp_url";
+              url +=
+                "&entry.333490010=" +
+                encodeURIComponent(email) +
+                "&entry.1301356340=" +
+                encodeURIComponent(question) +
+                "&submit=Submit";
+    
+              fetch(url);
+              document.getElementById("error").innerHTML =
+                "Your Question Was Successfully Submitted!";
+              document.getElementById("questionsForm").reset();
+              setTimeout(clearMessage, 5000);
+            }
+          }
+        </script>
+
+    
+<script src="submission.js" defer></script>
+
+
+    <!-- SOCIALS -->
+    <!-- <div id="socials">
+      <p
+        class="center"
+        style="
+          text-align: center;
+          font-family: Poppins;
+          width: max(45vw, 300px);
+        "
+      >
+        If you have any more questions, feel free to email us at
+        <a
+          style="font-family: Poppins; color: white"
+          href="mailto:hardhack@eng.ucsd.edu"
+          >hardhack@eng.ucsd.edu</a
+        >.
+      </p>
+      <br />
+      <div id="icons">
+        <a href="mailto:hardhack@eng.ucsd.edu">
+          <img class="email" src="./assets/social_icons/email.svg"
+        /></a>
+        <a
+          href="https://www.instagram.com/hardhackucsd/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="instagram" src="./assets/social_icons/instagram.svg"
+        /></a>
+      </div>
+    </div> -->
+  </body>
+</html>

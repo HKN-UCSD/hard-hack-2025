@@ -1,0 +1,200 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div id="cover-page">
+      <div id="cover-flex">
+        <div>
+          <div style="max-height: 60vh; display: flex; flex-direction: column">
+            <img
+              class="center"
+              src="./assets/images/hard_hack_logo.png"
+              style="
+                max-height: 400px;
+                min-height: 157px;
+                display: block;
+                flex: 6 6 60%;
+                width: 50vw;
+                object-fit: contain;
+              "
+            />
+            <p
+              style="
+                font-size: max(12px, min(2.5vw, min(3vh, 1.25em)));
+                margin: min(8px, 2vh) auto;
+                width: min(50vw, 480px);
+                height: 20%;
+                flex: 2 2 20%;
+              "
+            >
+              San Diego’s largest<br />hardware focused hackathon
+            </p>
+            <h3
+              id="eventdate"
+              style="font-size: max(16px, min(2vw, 4vh)); flex: 2 2 20%"
+            >
+              April 13 - 14
+            </h3>
+          </div>
+        </div>
+      </div>
+      <a
+        id="apply-link"
+        href="https://forms.gle/J1aCmrzgfmGcwAFN9"
+        style="display: block; font-size: min(2.5vh, 1em); position: sticky"
+        target="_blank"
+        ><button
+          class="big-button center main-font"
+          style="font-weight: 700; font-size: max(16px, min(5vw, 1.5em))"
+        >
+          Apply Now
+        </button></a
+      >
+    </div>
+
+    <div id="about-page">
+      <h1 style="margin-bottom:1em">About</h1>
+      <p
+        style="
+          font-size: 1em;
+          font-family: Poppins;
+          font-weight: 400;
+          padding-bottom: max(3em, 3vh);
+          max-width: min(700px, 80vw);
+          margin: 0 auto;
+          text-align: left;
+        "
+      >
+        H.A.R.D. Hack is a hardware hackathon that HKN holds annually in collaboration 
+        with IEEE and Triton Neurotech. During this 36 hour Hackathon, participants 
+        across experience levels have the opportunity to work in teams to develop a 
+        prototype or proof-of-concept project related to a given theme and track 
+        which will be announced closer to the event.
+        <br />
+        <br />
+        The event features technical and professional workshops, networking opportunities 
+        and social events for participants to get to know each other, learn about 
+        hardware and embedded systems prototyping and have a great time having fun 
+        with friends during the weekend. Top builds that align with the project theme 
+        will earn a prize! In previous years, winning teams have won speakers, mice, 
+        and other fun tech.
+        <br />
+        <br />
+        Group up into teams of 4 and compete with your fellow engineering students 
+        overnight. Anyone can attend, regardless of skill level, major, or university. 
+        We provide the materials, tools, and sustenance (food) needed to make a hardware hack! 
+        Come out and build something cool!
+      </p>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          margin-bottom: 2em;
+          flex-wrap: wrap;
+        "
+      >
+        <img
+          src="assets/images/hknlogo.png"
+          style="height: auto; width: 100px; flex-shrink: 0"
+        />
+        <img
+          src="assets/images/ieeelogo.png"
+          style="height: auto; width: 150px; flex-shrink: 0"
+        />
+        <img
+          src="assets/images/tntlogo.png"
+          style="height: auto; width: 100px; flex-shrink: 0"
+        />
+      </div>
+
+      <!-- VIEW PREVIOUS PROJECTS BUTTONS -->
+      <a
+        id="2020-projects-link"
+        href="https://h-a-r-d-hack-2020.devpost.com/"
+        target="_blank"
+        style="
+          display: block;
+          font-size: min(1.8vh, 0.7em);
+          position: sticky;
+          padding-bottom: max(2em, 2vh);
+        "
+        ><button
+          class="projects-button center main-font"
+          style="font-weight: 700; font-size: max(16px, min(5vw, 1.5em))"
+        >
+          View 2020 Projects
+        </button></a
+      >
+      <a
+        id="2019-projects-link"
+        href="https://hard-hack-2019.devpost.com/"
+        target="_blank"
+        style="
+          display: block;
+          margin-bottom: 5em;
+          font-size: min(1.8vh, 0.7em);
+          position: sticky;
+        "
+        ><button
+          class="projects-button center main-font"
+          style="font-weight: 700; font-size: max(16px, min(5vw, 1.5em))"
+        >
+          View 2019 Projects
+        </button></a
+      >
+    </div>
+
+    <!-- FAQ -->
+    <div id="faq-page">
+      <h1 style="margin-bottom:1em">FAQ</h1>
+      <dropdown-box
+        header="What is a hackathon?"
+        text="A hackathon is a gathering where people collaboratively build a project from the ground-up over a short period of time. While working on a particular project, the idea is for each group member to have the ability and freedom to work on whatever they want."
+      ></dropdown-box>
+      <dropdown-box
+        header="Do I need any prior experience to participate in Hard Hack?"
+        text="No, prior experience is not required to participate in the event. To cater to all experience levels, we have separate judging categories for Beginner, Intermediate and Advanced teams. Additionally, we have workshops planned throughout the event for participants to learn new technical and professional skills. What you get out of Hark Hack is completely up to you, it could be a learning opportunity, networking event, competition or just a fun way to spend your weekend with friends!"
+      ></dropdown-box>
+      <dropdown-box
+        header="Is it free?"
+        text="Yes! There is no cost to participate in the event, all costs are covered by the ECE department and Associated Students UCSD. The only perceived cost to participants is the time and effort you put into your project and networking with other teams, organizers, volunteers and Professors during the event."
+      ></dropdown-box>
+      <dropdown-box
+        header="Is HARD hack in-person, hybrid, or virtual?"
+        text="Hard hack will be in-person."
+      ></dropdown-box>
+      <dropdown-box
+        header="What do I bring?"
+        text="Though we don’t require you to bring anything for the event apart from yourself and maybe your brain… here are a few recommended items that might make your experience at the event even better: sleeping bag, pillow, blanket, comfortable clothing, toiletries, water bottles, energy drinks and snacks. There will be water refill stations and we will be providing drinks and snacks."
+      ></dropdown-box>
+      <dropdown-box
+        header="What parts will I have access to?"
+        text="Parts are being inventoried right now, we have a lot of Arduinos and basic components for use as well as quite a few sensors. During the event, we will have a dedicated parts room with a database of parts you can search through. If there is any specialized hardware you wish to use for your project, feel free to reach out to us to ask if we have it in stock, or you are welcome to bring some of your own parts as well!"
+      ></dropdown-box>
+      <dropdown-box
+        header="Do I need a team?"
+        text="Teams are up to 4 people, so feel free to work by yourself, in a pair, or with a full team of 4! However, it is recommended to form a team of 4 just because it's you and 3 other people working on one project versus just yourself."
+      ></dropdown-box>
+      <dropdown-box
+        header="What are the prizes?"
+        text="Prizes have not been decided yet, however, this year’s hackathon will have customized wooden plaques for all winning teams. Prizes will be announced during the opening ceremony of the event!"
+      ></dropdown-box>
+      <dropdown-box
+        header="What are the themes/tracks?"
+        text="Make sure to follow our Instagram account before Week 2 of Spring quarter, we will be doing a theme and track reveal leading up to the event!!"
+      ></dropdown-box>
+      <dropdown-box
+        header="Where is it?"
+        text="Qualcomm Room, first floor of Jacobs Hall at UC San Diego"
+      ></dropdown-box>
+      <dropdown-box
+        header="When is it?"
+        text="April 13, 2024 8AM - April 14, 2024 12PM"
+      ></dropdown-box>
+      <dropdown-box
+        header="Where can I apply to be a mentor or judge?"
+        text="Email <a href='mailto:hardhack@eng.ucsd.edu'>hardhack@eng.ucsd.edu</a> if you are interested in volunteering as a mentor and/or presiding as a judge."
+      ></dropdown-box>
+    </div>
+{% endblock content %}

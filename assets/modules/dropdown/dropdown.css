@@ -1,0 +1,70 @@
+dropdown-box h3 {
+	color: #ffffff;
+	font-family: "Lexend Peta";
+	text-align: center;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+}
+dropdown-box p {
+	color: #ffffff;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+dropdown-box a {
+	font-family: "Poppins"; 
+	color: white;
+}
+
+dropdown-box .header {
+	display: flex;
+	margin: auto;
+	width: 75%;
+	cursor: pointer;
+}
+
+dropdown-box .dropdown {
+	margin: auto;
+	width: 100%;
+}
+dropdown-box .header h3 {
+	margin: 0px;
+	width: auto;
+	padding: 0.5em 0px;
+	padding-right: 1em;
+	text-align: left;
+	flex: 1 1 auto;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+dropdown-box .header svg {
+	vertical-align: bottom;
+	transform: rotate(0deg);
+	flex: 0 0 auto;
+	margin: auto;
+}
+dropdown-box .dropdown-hidden {
+	position: relative;
+	margin: inherit;
+	overflow: clip;
+}
+dropdown-box .dropdown-hidden hr {
+	border: solid 1px white;
+	height: 2px;
+	background: white;
+	margin: 0px;
+	opacity: 0;
+}
+dropdown-box .dropdown-hidden p {
+	position: relative;
+	width: 80%;
+	font-size: max(0.75em,14px);
+	text-align: left;
+	height: 0px;
+	margin: 0px auto;
+	overflow: clip;
+	opacity: 0;
+}

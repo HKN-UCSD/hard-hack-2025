@@ -1,0 +1,121 @@
+@font-face {
+	font-family: "Lexend Peta";
+	src: url("./assets/fonts/LexendPeta-VariableFont_wght.ttf")
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url("./assets/fonts/poppins/Poppins-Thin.ttf");
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Poppins";
+	src: url("./assets/fonts/poppins/Poppins-ThinItalic.ttf");
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url("./assets/fonts/poppins/Poppins-Regular.ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Poppins";
+	src: url("./assets/fonts/poppins/Poppins-Italic.ttf");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url("./assets/fonts/poppins/Poppins-Medium.ttf");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Poppins";
+	src: url("./assets/fonts/poppins/Poppins-MediumItalic.ttf");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url("./assets/fonts/poppins/Poppins-Bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Poppins";
+	src: url("./assets/fonts/poppins/Poppins-BoldItalic.ttf");
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url("./assets/fonts/poppins/Poppins-Black.ttf");
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Poppins";
+	src: url("./assets/fonts/poppins/Poppins-BlackItalic.ttf");
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Futura";
+	src: url("./assets/fonts/futura/Futura-Thin.ttf");
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Futura";
+	src: url("./assets/fonts/futura/Futura-ThinItalic.ttf");
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Futura";
+	src: url("./assets/fonts/futura/Futura-Regular.ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Futura";
+	src: url("./assets/fonts/futura/Futura-Italic.ttf");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Futura";
+	src: url("./assets/fonts/futura/Futura-Medium.ttf");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Futura";
+	src: url("./assets/fonts/futura/Futura-MediumItalic.ttf");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Futura";
+	src: url("./assets/fonts/futura/Futura-Bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Futura";
+	src: url("./assets/fonts/futura/Futura-BoldItalic.ttf");
+	font-weight: 700;
+	font-style: italic;
+}
