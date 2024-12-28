@@ -4,66 +4,66 @@
 }
 
 @font-face {
-	font-family: "Poppins";
-	src: url("./assets/fonts/poppins/Poppins-Thin.ttf");
+	font-family: "Tomorrow";
+	src: url("./assets/fonts/tomorrow/Tomorrow-Light.ttf");
 	font-weight: 100;
-	font-style: normal;
+	font-style: normal; 
 }
 @font-face {
-	font-family: "Poppins";
-	src: url("./assets/fonts/poppins/Poppins-ThinItalic.ttf");
+	font-family: "Tomorrow";
+	src: url("./assets/fonts/tomorrow/Tomorrow-LightItalic.ttf");
 	font-weight: 100;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: "Poppins";
-	src: url("./assets/fonts/poppins/Poppins-Regular.ttf");
+	font-family: "Tomorrow";
+	src: url("./assets/fonts/tomorrow/Tomorrow-Regular.ttf");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
-	font-family: "Poppins";
-	src: url("./assets/fonts/poppins/Poppins-Italic.ttf");
+	font-family: "Tomorrow";
+	src: url("./assets/fonts/tomorrow/Tomorrow-RegularItalic.ttf");
 	font-weight: 400;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: "Poppins";
-	src: url("./assets/fonts/poppins/Poppins-Medium.ttf");
+	font-family: "Tomorrow";
+	src: url("./assets/fonts/tomorrow/Tomorrow-Medium.ttf");
 	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
-	font-family: "Poppins";
-	src: url("./assets/fonts/poppins/Poppins-MediumItalic.ttf");
+	font-family: "Tomorrow";
+	src: url("./assets/fonts/tomorrow/Tomorrow-MediumItalic.ttf");
 	font-weight: 500;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: "Poppins";
-	src: url("./assets/fonts/poppins/Poppins-Bold.ttf");
+	font-family: "Tomorrow";
+	src: url("./assets/fonts/tomorrow/Tomorrow-Bold.ttf");
 	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
-	font-family: "Poppins";
-	src: url("./assets/fonts/poppins/Poppins-BoldItalic.ttf");
+	font-family: "Tomorrow";
+	src: url("./assets/fonts/tomorrow/Tomorrow-BoldItalic.ttf");
 	font-weight: 700;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: "Poppins";
-	src: url("./assets/fonts/poppins/Poppins-Black.ttf");
+	font-family: "Tomorrow";
+	src: url("./assets/fonts/tomorrow/Tomorrow-ExtraBold.ttf");
 	font-weight: 900;
 	font-style: normal;
 }
 @font-face {
-	font-family: "Poppins";
-	src: url("./assets/fonts/poppins/Poppins-BlackItalic.ttf");
+	font-family: "Tomorrow";
+	src: url("./assets/fonts/tomorrow/Tomorrow-ExtraBoldItalic.ttf");
 	font-weight: 900;
 	font-style: italic;
 }

@@ -1,21 +1,22 @@
 dropdown-box h3 {
-	color: #ffffff;
-	font-family: "Lexend Peta";
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+	font-family: "Tomorrow";
 	text-align: center;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 18px;
 }
 dropdown-box p {
-	color: #ffffff;
-	font-family: "Poppins";
+	color: white;
+	font-family: "Tomorrow";
 	font-style: normal;
 	font-weight: 500;
 	font-size: 18px;
 }
 
 dropdown-box a {
-	font-family: "Poppins"; 
+	font-family: "Tomorrow"; 
 	color: white;
 }
 
