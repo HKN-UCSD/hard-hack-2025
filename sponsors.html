@@ -290,12 +290,12 @@
               id="email"
               placeholder="Email"
               style="
+                font-family: Tomorrow;
                 width: min(80%, 600px);
                 height: 36px;
                 margin-bottom: 16px;
                 border-radius: 8px;
-                padding-left: 10px;
-                padding-right: 10px;
+                padding: 10px;
                 border: none;
               "
             />
@@ -306,12 +306,17 @@
               rows="10"
               cols="50"
               placeholder="Enter Your Question Here..."
-              style="width: min(80%, 600px); padding: 10px; border-radius: 8px"
+              style=
+                "font-family: Tomorrow; 
+                width: min(80%, 600px); 
+                padding: 10px; 
+                border-radius: 8px; 
+                border: none;"
             ></textarea>
           </form>
           <br />
     
-          <button onclick="submitForm()" class="projects-button center main-font">
+          <button onclick="submitForm()" class="projects-button center main-font" style="font-family: Tomorrow">
             Submit Form
           </button>
           <p id="error"></p>
@@ -333,7 +338,7 @@
                 "Question Field Cannot Be Empty";
             } else {
               let url =
-                "https://docs.google.com/forms/d/e/1FAIpQLScq_QdWo8Y_mPnKSTRerhu11__t2NwnedWEzKvqf5_13xtTgQ/formResponse?usp=pp_url";
+                "https://docs.google.com/forms/d/e/1FAIpQLScCxzKi5_67jKD9_eaozGTnyLAFV5Jmlz1ku3ZVqKm3PMqH-g/formResponse";
               url +=
                 "&entry.333490010=" +
                 encodeURIComponent(email) +
@@ -349,39 +354,5 @@
             }
           }
         </script>
-
-    
-
-    <!-- SOCIALS -->
-    <!-- <div id="socials">
-      <p
-        class="center"
-        style="
-          text-align: center;
-          font-family: Poppins;
-          width: max(45vw, 300px);
-        "
-      >
-        If you have any more questions, feel free to email us at
-        <a
-          style="font-family: Poppins; color: white"
-          href="mailto:hardhack@eng.ucsd.edu"
-          >hardhack@eng.ucsd.edu</a
-        >.
-      </p>
-      <br />
-      <div id="icons">
-        <a href="mailto:hardhack@eng.ucsd.edu">
-          <img class="email" src="./assets/social_icons/email.svg"
-        /></a>
-        <a
-          href="https://www.instagram.com/hardhackucsd/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img class="instagram" src="./assets/social_icons/instagram.svg"
-        /></a>
-      </div>
-    </div> -->
   </body>
 </html>
