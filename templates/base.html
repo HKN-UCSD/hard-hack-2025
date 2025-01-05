@@ -107,7 +107,7 @@
 
         <!-- ASK QUESTIONS -->
         <div class="center" id="questions-div" style="padding-bottom: 4em">
-          <h1 style="margin-bottom: 1em">Any More Questions?</h1>
+          <h1 style="margin-bottom: 1em; color: #153cb4; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">Any More Questions?</h1>
           <form id="questionsForm">
             <input
               type="text"
@@ -157,7 +157,7 @@
                 "Question Field Cannot Be Empty";
             } else {
               let url =
-                "https://docs.google.com/forms/d/e/1FAIpQLScq_QdWo8Y_mPnKSTRerhu11__t2NwnedWEzKvqf5_13xtTgQ/formResponse?usp=pp_url";
+                "https://docs.google.com/forms/d/e/1FAIpQLScCxzKi5_67jKD9_eaozGTnyLAFV5Jmlz1ku3ZVqKm3PMqH-g/formResponse";
               url +=
                 "&entry.333490010=" +
                 encodeURIComponent(email) +
@@ -175,37 +175,5 @@
         </script>
 
     {% block deferredscripts %}{% endblock deferredscripts %}
-
-    <!-- SOCIALS -->
-    <!-- <div id="socials">
-      <p
-        class="center"
-        style="
-          text-align: center;
-          font-family: Poppins;
-          width: max(45vw, 300px);
-        "
-      >
-        If you have any more questions, feel free to email us at
-        <a
-          style="font-family: Poppins; color: white"
-          href="mailto:hardhack@eng.ucsd.edu"
-          >hardhack@eng.ucsd.edu</a
-        >.
-      </p>
-      <br />
-      <div id="icons">
-        <a href="mailto:hardhack@eng.ucsd.edu">
-          <img class="email" src="./assets/social_icons/email.svg"
-        /></a>
-        <a
-          href="https://www.instagram.com/hardhackucsd/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img class="instagram" src="./assets/social_icons/instagram.svg"
-        /></a>
-      </div>
-    </div> -->
   </body>
 </html>
