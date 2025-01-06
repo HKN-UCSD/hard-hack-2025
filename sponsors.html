@@ -329,15 +329,14 @@
               document.getElementById("error").innerHTML =
                 "Question Field Cannot Be Empty";
             } else {
-              let url =
-                "https://docs.google.com/forms/d/e/1FAIpQLScCxzKi5_67jKD9_eaozGTnyLAFV5Jmlz1ku3ZVqKm3PMqH-g/formResponse";
-              url +=
-                "&entry.333490010=" +
-                encodeURIComponent(email) +
-                "&entry.1301356340=" +
-                encodeURIComponent(question) +
-                "&submit=Submit";
-    
+              const url = new URL(
+                "https://docs.google.com/forms/d/e/1FAIpQLScCxzKi5_67jKD9_eaozGTnyLAFV5Jmlz1ku3ZVqKm3PMqH-g/formResponse"
+              );
+              
+              url.searchParams.append("entry.333490010", email);
+              url.searchParams.append("entry.1301356340", question);
+              url.searchParams.append("submit", "Submit");
+
               fetch(url);
               document.getElementById("error").innerHTML =
                 "Your Question Was Successfully Submitted!";
