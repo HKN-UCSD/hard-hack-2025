@@ -136,7 +136,7 @@ h1 {
 #cover-page {
 	padding-top: max(48px,15vh);
 	text-align: center;
-	min-height: max(85vh,650px);
+	min-height: max(85vh,600px);
 	max-height: 100vh;
 	
 	overflow-x: clip;
@@ -147,7 +147,7 @@ h1 {
 	display: flex;
 	justify-content: center;
 	height: 100%;
-	min-height: 400px;
+	min-height: 500px;
 }
 
 #img_fallenstar_container {
