@@ -5,19 +5,25 @@
       <div id="cover-flex">
         <div>
           <div style="max-height: 60vh; display: flex; flex-direction: column; gap: 1em;">
-            <img
-              class="center"
-              src="./assets/images/hard_hack_logo.png"
-              style="
-                max-height: 600px;
-                min-height: 300px;
-                display: block;
-                flex: 6 6 60%;
-                width: 90vw;
-                object-fit: contain;
-                cursor: zoom-in;
-              "
-            />
+            <picture>
+              <source
+                srcset="./assets/images/mobile_hard_hack_logo_mobile.png"
+                media="(max-width: 768px)"
+              />
+              <img
+                class="center"
+                src="./assets/images/hard_hack_logo.png"
+                style="
+                  max-height: 600px;
+                  min-height: 300px;
+                  display: block;
+                  flex: 6 6 60%;
+                  width: 90vw;
+                  object-fit: contain;
+                  cursor: zoom-in;
+                "
+              />
+            </picture>
             <p
               style="
                 font-size: max(12px, min(2.5vw, min(3vh, 1.25em)));
