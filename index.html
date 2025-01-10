@@ -104,63 +104,62 @@
     
     <div id="cover-page">
       <div id="cover-flex">
-        <div>
-          <div style="max-height: 60vh; display: flex; flex-direction: column">
-            <img
-              class="center"
-              src="./assets/images/hard_hack_logo.png"
-              style="
-                max-height: 700px;
-                min-height: 500px;
-                display: block;
-                flex: 6 6 60%;
-                width: 100vw;
-                object-fit: contain;
-                cursor: zoom-in;
-                margin: auto;
-                margin-left: -100px;
-              "
-            />
-            <p
-              style="
-                font-size: max(12px, min(2.5vw, min(3vh, 1.25em)));
-                margin: min(8px, 2vh) auto;
-                width: min(50vw, 480px);
-                height: 20%;
-                flex: 2 2 20%;
-              "
+        <!-- src intentionally kept empty for JS to populate -->
+        <div style="max-height: 60vh; display: flex; flex-direction: column; gap: 2em;">
+          <img
+            id="banner"
+            class="center"
+            src=""
+            style="
+              max-height: 600px;
+              min-height: 300px;
+              display: block;
+              flex: 6 6 60%;
+              width: 90vw;
+              object-fit: contain;
+              cursor: zoom-in;
+            "
+          />
+          <p
+            style="
+              font-size: max(12px, min(2.5vw, min(3vh, 1.25em)));
+              margin: min(8px, 2vh) auto;
+              width: min(50vw, 480px);
+              height: 20%;
+              flex: 2 2 20%;
+            "
+          >
+            San Diego’s largest<br />hardware focused hackathon
+          </p>
+          <h3
+            id="eventdate"
+            style="font-size: max(16px, min(2vw, 4vh)); flex: 2 2 20%"
+          >
+            February 1 - 2
+          </h3>
+          <a
+            id="apply-link"
+            class="big-button center main-font"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeseq3WlXBgjBstpkevuf67iK4hSnYpBexU1laiWSPNzs9Osg/viewform?usp=header"
+            style="
+              display: inline-block;
+              font-size: min(2.5vh, 1em);
+              font-weight: 700;
+              font-size: max(16px, min(5vw, 1.5em));
+              text-decoration: none;"
+            target="_blank"
             >
-              San Diego’s largest<br />hardware focused hackathon
-            </p>
-            <h3
-              id="eventdate"
-              style="font-size: max(16px, min(2vw, 4vh)); flex: 2 2 20%"
-            >
-              February 1 - 2
-            </h3>
-            <a
-              id="apply-link"
-              class="big-button center main-font"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeseq3WlXBgjBstpkevuf67iK4hSnYpBexU1laiWSPNzs9Osg/viewform?usp=header"
-              style="
-                display: inline-block;
-                font-size: min(2.5vh, 1em);
-                position: sticky;
-                font-weight: 700;
-                font-size: max(16px, min(5vw, 1.5em));
-                text-decoration: none;"
-              target="_blank"
-              >
-                Apply Now</a
-            >
-          </div>
+              Apply Now</a
+          >
         </div>
       </div>
       
     </div>
 
     <div id="about-page">
-      <h1 style="margin-bottom:1em; margin-top: 40px; color: #153cb4; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3)">About</h1>
+      <h1 style="margin-bottom:1em; 
+                color: #153cb4; 
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3)">About</h1>
       <p
         style="
           font-size: 1em;
@@ -369,15 +368,14 @@
               document.getElementById("error").innerHTML =
                 "Question Field Cannot Be Empty";
             } else {
-              let url =
-                "https://docs.google.com/forms/d/e/1FAIpQLScCxzKi5_67jKD9_eaozGTnyLAFV5Jmlz1ku3ZVqKm3PMqH-g/formResponse";
-              url +=
-                "&entry.333490010=" +
-                encodeURIComponent(email) +
-                "&entry.1301356340=" +
-                encodeURIComponent(question) +
-                "&submit=Submit";
-    
+              const url = new URL(
+                "https://docs.google.com/forms/d/e/1FAIpQLScCxzKi5_67jKD9_eaozGTnyLAFV5Jmlz1ku3ZVqKm3PMqH-g/formResponse"
+              );
+              
+              url.searchParams.append("entry.333490010", email);
+              url.searchParams.append("entry.1301356340", question);
+              url.searchParams.append("submit", "Submit");
+
               fetch(url);
               document.getElementById("error").innerHTML =
                 "Your Question Was Successfully Submitted!";
