@@ -4,12 +4,14 @@ $(document).ready(function() {
 		$("#menu-bar").css({display: "none"});
 		$("#dropdown-menu-bar").css({display: "block"});
 		$("#icon").css({display: "none"});
+		$("#banner").attr("src", "./assets/images/hard_hack_logo_mobile.png");
 	}
 	else
 	{
 		$("#menu-bar").css({display: "block"});
 		$("#dropdown-menu-bar").css({display: "none"});
 		$("#icon").css({display: "block"});
+		$("#banner").attr("src", "./assets/images/hard_hack_logo.png");
 	}
 	
 			
