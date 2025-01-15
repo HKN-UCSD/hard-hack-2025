@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>H.A.R.D. Hack |  Submission </title>
+    <title>H.A.R.D. Hack |  2024 Projects </title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
@@ -22,6 +22,13 @@
     <link rel="stylesheet" href="./assets/modules/heading/heading.css" />
     
 <style>
+    body {
+        background-image: url('/assets/images/background_2024.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
     div.wrapper {
         max-width: 1000px;
         width: 100%;
@@ -138,12 +145,7 @@
     <div id="menu-bar" class="background-element">
       <a href="/index"><span>Home</span></a>
       <a href="/sponsors"><span>Sponsor Us</span></a>
-      <a href="/submissions"><span>Submissions</span></a>
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSfA1I-pSimuTlpifzKSWF5s5FZ08zvofOefbBSUjUbdeaurdg/viewform"
-        target="_blank"
-      ><span>Submit Your Project</span>
-      </a>
+      <a href="/submissions"><span>2024 Projects</span></a>
     </div>
     <div id="dropdown-menu-bar" class="background-element">
       <div
@@ -168,26 +170,21 @@
           <div style="height: 68px"></div>
           <a href="/index"><p>Home</p></a>
           <a href="/sponsors"><p>Sponsor Us</p></a>
-          <a href="/submissions"><p>Submissions</p></a>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfA1I-pSimuTlpifzKSWF5s5FZ08zvofOefbBSUjUbdeaurdg/viewform"
-            target="_blank"
-          ><p>Submit Your Project</p>
-          </a>
+          <a href="/submissions"><p>View 2024 Projects</p></a>
         </div>
       </div>
     </div>
     <div id="background">
       <img
         class="background-element"
-        src="./assets/images/hard_hack_small_logo.png"
+        src="/assets/images/hard_hack_small_logo_2024.png"
         style="width: 10%; min-width: 50px; top: max(3vh, 20px); left: 20px"
       />
     </div>
 
     
 <h1 style="margin-bottom: 1em; font-size: calc(1em + 3vw); margin-top: 4em">
-    Submissions
+    2024 Projects
 </h1>
 <template id="card-template">
     <div class="card">
@@ -251,7 +248,7 @@
                 "Question Field Cannot Be Empty";
             } else {
               const url = new URL(
-                "https://docs.google.com/forms/d/e/1FAIpQLScCxzKi5_67jKD9_eaozGTnyLAFV5Jmlz1ku3ZVqKm3PMqH-g/formResponse"
+                ""
               );
               
               url.searchParams.append("entry.333490010", email);
