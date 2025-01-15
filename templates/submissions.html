@@ -1,8 +1,10 @@
-{% extends "base.html" %} {% block title %} Submission {% endblock title %} 
+{% extends "base.html" %} {% block title %} 2024 Projects {% endblock title %} 
+
+{% block logo_src %}/assets/images/hard_hack_small_logo_2024.png{% endblock logo_src %}
 
 {% block content %}
 <h1 style="margin-bottom: 1em; font-size: calc(1em + 3vw); margin-top: 4em">
-    Submissions
+    2024 Projects
 </h1>
 <template id="card-template">
     <div class="card">
@@ -14,6 +16,13 @@
 <div id="card-wrapper" class="wrapper"></div>
 {% endblock content %} {% block style %}
 <style>
+    body {
+        background-image: url('/assets/images/background_2024.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
     div.wrapper {
         max-width: 1000px;
         width: 100%;
