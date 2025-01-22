@@ -136,7 +136,7 @@ h1 {
 #cover-page {
 	padding-top: max(48px,15vh);
 	text-align: center;
-	min-height: max(85vh,650px);
+	min-height: max(85vh,600px);
 	max-height: 100vh;
 	
 	overflow-x: clip;
@@ -146,6 +146,7 @@ h1 {
 #cover-flex {
 	display: flex;
 	justify-content: center;
+	align-items: flex-start;
 	height: 100%;
 	min-height: 400px;
 }

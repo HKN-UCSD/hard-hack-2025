@@ -54,12 +54,7 @@
     <div id="menu-bar" class="background-element">
       <a href="/index"><span>Home</span></a>
       <a href="/sponsors"><span>Sponsor Us</span></a>
-      <a href="/submissions"><span>Submissions</span></a>
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSfA1I-pSimuTlpifzKSWF5s5FZ08zvofOefbBSUjUbdeaurdg/viewform"
-        target="_blank"
-      ><span>Submit Your Project</span>
-      </a>
+      <a href="/submissions"><span>2024 Projects</span></a>
     </div>
     <div id="dropdown-menu-bar" class="background-element">
       <div
@@ -84,19 +79,14 @@
           <div style="height: 68px"></div>
           <a href="/index"><p>Home</p></a>
           <a href="/sponsors"><p>Sponsor Us</p></a>
-          <a href="/submissions"><p>Submissions</p></a>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfA1I-pSimuTlpifzKSWF5s5FZ08zvofOefbBSUjUbdeaurdg/viewform"
-            target="_blank"
-          ><p>Submit Your Project</p>
-          </a>
+          <a href="/submissions"><p>View 2024 Projects</p></a>
         </div>
       </div>
     </div>
     <div id="background">
       <img
         class="background-element"
-        src="./assets/images/hard_hack_small_logo.png"
+        src="{% block logo_src %}/assets/images/hard_hack_small_logo.png{% endblock logo_src %}"
         style="width: 10%; min-width: 50px; top: max(3vh, 20px); left: 20px"
       />
     </div>
@@ -156,15 +146,14 @@
               document.getElementById("error").innerHTML =
                 "Question Field Cannot Be Empty";
             } else {
-              let url =
-                "https://docs.google.com/forms/d/e/1FAIpQLScCxzKi5_67jKD9_eaozGTnyLAFV5Jmlz1ku3ZVqKm3PMqH-g/formResponse";
-              url +=
-                "&entry.333490010=" +
-                encodeURIComponent(email) +
-                "&entry.1301356340=" +
-                encodeURIComponent(question) +
-                "&submit=Submit";
-    
+              const url = new URL(
+                ""
+              );
+              
+              url.searchParams.append("entry.333490010", email);
+              url.searchParams.append("entry.1301356340", question);
+              url.searchParams.append("submit", "Submit");
+
               fetch(url);
               document.getElementById("error").innerHTML =
                 "Your Question Was Successfully Submitted!";
