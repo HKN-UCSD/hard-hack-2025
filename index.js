@@ -4,12 +4,14 @@ $(document).ready(function() {
 		$("#menu-bar").css({display: "none"});
 		$("#dropdown-menu-bar").css({display: "block"});
 		$("#icon").css({display: "none"});
+		$("#logo-container").css({"flex-direction": "column"});
 	}
 	else
 	{
 		$("#menu-bar").css({display: "block"});
 		$("#dropdown-menu-bar").css({display: "none"});
 		$("#icon").css({display: "block"});
+		$("#logo-container").css({"flex-direction": "row"});
 	}
 	
 			
