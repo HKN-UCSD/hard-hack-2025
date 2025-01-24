@@ -182,7 +182,7 @@ h1 {
 #about-page, .text-page {
 	text-align: center;
 	min-height: max(60vh,500px);
-	padding: 0px 0px max(4em,10vh) 0px;
+	padding: 0px 0px max(4em,6vh) 0px;
 	position: relative;
 	z-index: 1;
 	overflow-x: clip;
