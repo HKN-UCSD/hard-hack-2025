@@ -1,4 +1,4 @@
-# HARD Hack 2024
+# HARD Hack 2025
 
 H.A.R.D. Hack is a hardware hackathon that HKN holds annually in collaboration with IEEE and Triton Neurotech. We provide the materials and the tools needed to make a hardware hack. Come out and build something cool! Anyone can attend, regardless of skill level, major, or university. Group up into teams of 4 and compete with your fellow engineering students overnight. Food will be provided!
 
