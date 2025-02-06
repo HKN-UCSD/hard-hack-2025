@@ -13,7 +13,7 @@ $(document).ready(function() {
 		$("#dropdown-menu-bar").css({display: "none"});
 		$("#icon").css({display: "block"});
     	$("#banner").attr("src", "./assets/images/hard_hack_logo.png");
-		$("#logo-container").css({"flex-direction": "row"});
+		$("#logo-container").css({"flex-direction": "column"});
 	}
 	
 			
